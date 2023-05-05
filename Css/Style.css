@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/*Inicio*/
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(207, 217, 223, 0.556) 0%,
+      rgba(226, 235, 240, 0.507) 100%),url(../Img/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+}
+
+.head{
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 22vw;
+  height: 100%;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5); 
+  transform: translate(110%);
+  transition: all .7s;
+}
+
+.spread{
+  transform: translate(0);
+}
+
+.menu-navegacion a{
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+}
+.menu-navegacion a:hover{
+  scale: 1.1;
+}
+
+.titulo{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.copy{
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.hamburguer{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color:#30cfd0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/*NUestro servicio*/
+
+.subtitulo{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.contenedor-servicio{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+  width: 40%;
+}
+.programming-servicio{
+  width: 43%;
+}
+
+.servicios{
+  margin-bottom: 20px;
+}
+
+.n-servicios{
+  margin-bottom: 7px;
+  color: #30cfd0;
+}
+.number{
+  display: inline-block;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 80%;
+  margin-right: 8px;
+}
+
+.cont-proyectos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+}
+
+.img-proyect{
+  object-fit: cover;
+  align-items: center;
+  width: 30%;
+  gap: 0;
+  display: block;
+  margin-bottom: 5px;
+  transition: all .6s;
+}
+
+.img-proyect:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+.imagen-ligth{
+  position: fixed;
+  background:rgba(0,0,0,.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: all .5s ease-in-out;
+}
+.show{
+  transform: translate(0);
+}
+
+.agregar-imagen{
+  object-fit: cover;
+  width: 70%;
+  border-radius: 10px;
+  transition: tranform 1.3s .2s;
+}
+.showImage{
+  transform: scale(1);
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/*Skills*/
+
+.contenedor-skills{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cont-skills img{
+  width: 100px;
+  display: block;
+  margin:0 auto;
+  transition: all .3s;
+}
+.cont-skills img:hover{
+  scale: 1.1;
+}
+
+.cont-skills .html{
+  width: 80px;
+}
+.cont-skills .javascript{
+  width: 122px;
+}
+
+footer{
+  background-color: #30cfd0;
+  padding-bottom: 0.1px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.contact-us{
+  width: 40%;
+  color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p {
+  font-weight: 500;
+}
+
+.social-media{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon{
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 60%;
+  text-align: center;
+  color: #fff;
+}
+
+.social-media-icon:hover{
+  border: solid 1px #009efd;
+  background-color: #fff;
+  color: #009efd;
+}
+
+.social-media-icon i{
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.line{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+  .menu-navegacion{
+    width: 30vh;
+  }
+  .titulo{
+    font-size: 45px;
+  }
+  .contenedor-servicio img{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .programming-servicio{
+    width: 80%;
+  }
+  .servicios{
+    margin-bottom: 30px;
+  }
+  .agregar-imagen{
+    width: 85%;
+  }
+  .img-proyect{
+    width: 45%;
+    margin-bottom: 12px;
+    border: none;
+  }
+  .cont-skills{
+    width: 80%;
+  }
+  .footer-content{
+    justify-content: center;
+  }
+  .social-media{
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .social-media i{
+    margin-left: 0;
+  }
+  .social-media-icon{
+    margin-left: 0;
+  }
+  .contact-us{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width:800px){
+  .menu-navegacion{
+    width: 45vw;
+  }
+  .hamburguer{
+    top: 20px;
+    right: 20px;
+  }
+  .titulo{
+    font-size: 25px;
+  }
+  .subtitulo{
+    font-size: 25px;
+  }
+  .agregar-imagen{
+    width: 95%;
+  }
+  .img-proyect{
+    width: 95%;
+  }
+  .social-media{
+    width: 100%;
+  }
+  .contact-us{
+    width: 90%;
+  }
+
+}
